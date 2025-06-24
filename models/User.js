@@ -4,17 +4,17 @@ import { DataTypes } from 'sequelize';
 const User = sequelize.define(
     'User',
     {
-        id:{
+        id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            autoIncrement: true,
             primaryKey: true,
         },
-        name:{
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        email:{
-            type:DataTypes.STRING
+        email: {
+            type: DataTypes.STRING
         }
     }
 )
