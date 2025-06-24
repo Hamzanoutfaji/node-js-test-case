@@ -16,6 +16,9 @@ const User = sequelize.define(
         email: {
             type: DataTypes.STRING
         }
+    },
+    {
+        timestamps: false
     }
 )
 
