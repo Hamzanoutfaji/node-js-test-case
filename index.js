@@ -1,6 +1,5 @@
 import express from 'express';
-import User from './db.js';
-import   sequelize  from './db.js';
+import User from './models/User.js';
 
 const app = express();
 app.use(express.json())
